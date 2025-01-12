@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        .box1{
+            background-color: brown;
+            /* position: absolute;
+            top:0px; 
+            left: 10px;  */
+            /* position: fixed; */
+            /* position:sticky;
+            top:0px; */
+        }
+        .box2{
+            /* position: relative;
+            top: -100px;
+            left: 120px; */
+            background-color: blue;
+        }
+        .box3{
+            background-color: chartreuse;
+        }
+        .box4{
+            background-color: cyan;
+        }
+        .box{
+               border: 2px solid black;
+               margin: 3px;
+               padding: 3px;
+               height: 433px;
+               width:80vh;
+            }
+        .parents{
+            /* transform,filter and perspective can also make element a positioned */
+            border: 2px solid black;
+            padding:45px;
+            margin:34px;
+            /* transform: translate(0); */
+            filter: invert(0);
+            /* position: absolute; */
+        }     
+    </style>
+</head>
+<body>
+    <div class="parents">
+
+        <div class="box box1"> </div>
+        <div class="box box2"> </div>
+        <div class="box box3"> </div>
+        <div class="box box4"> </div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .cointainer{
+        background-color: blue;
+        height:75vh ;
+        width:75vw;
+        position: relative;
+    }
+    .ball{
+        background-color: red;
+        height: 17vh;
+        width:17vh;
+        border-radius: 70px;
+        position: absolute;
+        bottom: 0;
+        left:0;
+        animation: x 3s  linear infinite,Y 1s ease-out infinite alternate;
+    }
+    @keyframes x {
+        from{
+           left:0%
+        }
+        to{
+            left:100%
+        }
+    }
+    @keyframes Y {
+        from{
+            bottom:0%
+        }
+        to{
+            bottom: 100%;
+        }
+        
+    }
+</style>
+<body>
+    <div class="cointainer">
+        <div class="ball">
+
+        </div>
+    </div>
+</body>
+</html>

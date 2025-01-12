@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* global variables */
+        :root{
+            --color:blue;
+            --seccolor:rgb(120, 120, 145);
+            --defpad:24px;
+            --defof: 0.3;
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .nav{
+            
+            background-color:var(--color);
+        }
+        .content{
+            background-color:var(--seccolor);
+        }
+
+        ul{
+            list-style: none;
+            display: flex;
+        
+        } 
+        li{
+            opacity: var(--defof);
+            padding:var(--defpad);
+            border: 2px solid var(--seccolor);
+        }
+        ul li:first-child{
+            --color:pink;  /*local variable */
+            background-color:var(--color,blue) ; 
+            /* if there is no any variables name --color then it make blue */
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About us</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="content">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque consequuntur ipsum, commodi quos quasi quae laboriosam, explicabo fuga animi quibusdam aliquam nemo sapiente vel consectetur rem asperiores at aperiam illo modi vitae!
+    </div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float and clear</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+         .container{
+               border:2px solid blue  ;
+               width: 900px;
+               /* background-color: rgb(144, 187, 187); */
+            
+
+         }
+         .items{
+            border: 2px solid red;
+            margin: 12px 3px;
+            padding:12px 3px; 
+            background-color: rgb(203, 218, 213);
+
+         }
+         #fruits{
+            float:left;
+            width:48%;
+
+         }
+
+         #computer{
+              float: right;
+              width:48%;
+
+         }
+         #stationery{
+            /* float:left; */
+            /* clear: left; */
+            clear: both;
+            width: 99%;
+         }
+         p,h2{
+            text-align: center;
+            text-align: left;
+            text-align: right;
+            text-align: justify;
+         }  
+         h1{
+            margin: auto;
+            width: 300px;
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+         <h1 >welcome to store </h1>
+        <div id="fruits" class="items">
+            <h2>fruits</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe atque tenetur dicta tempore nihil voluptatum, autem doloremque incidunt soluta recusandae laudantium illo! Iusto tenetur porro totam quia quae asperiores deleniti officia ut eligendi rerum.</p>
+        </div>
+            <div id="computer" class="items">
+                <h2>computer</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione quos laborum voluptate dolor commodi unde illo reprehenderit obcaecati dicta ad, corrupti consectetur excepturi corporis numquam! Error officiis nobis inventore odio atque obcaecati ipsam repellendus! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti suscipit voluptas rerum magni, quam commodi sint, saepe repellendus totam debitis eius neque nulla tempora?Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sunt perspiciatis minima impedit, eius temporibus iusto, placeat aliquam, architecto velit facere ullam non vitae ipsam excepturi ipsum dicta dolores. Quod consequuntur provident, voluptates quos voluptatum repellat ab quis eos amet nemo, quisquam est culpa sequi in et architecto deserunt quo delectus? Asperiores quaerat sunt magni molestiae praesentium suscipit fugiat vitae at iure amet. Rerum!</p> 
+            </div>
+            <div class="items" id="stationery">
+                <h2>stationery</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil eius laudantium nobis sed! Repellendus assumenda non, rerum laboriosam excepturi fugit, ut aliquam earum amet eligendi pariatur nam? Eaque quibusdam consequuntur explicabo! Provident, quis </p>
+            </div>
+            <div class="items" id="glasses">
+                <h2>glasses</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil eius laudantium nobis sed! Repellendus assumenda non, rerum laboriosam excepturi fugit, ut aliquam earum amet eligendi pariatur nam? Eaque quibusdam consequuntur explicabo! Provident, quis </p>
+            </div>
+     </div>
+</body>
+</html>

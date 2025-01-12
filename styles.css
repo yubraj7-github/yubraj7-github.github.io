@@ -1,0 +1,144 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and font settings */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: #111;
+}
+
+.navbar__logo {
+    width: 100px;
+    object-fit: contain;
+}
+
+.navbar__avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+/* Hero Banner */
+.banner {
+    position: relative;
+    height: 448px;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+}
+
+.banner__contents {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    max-width: 500px;
+}
+
+.banner__title {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.banner__description {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+.banner__buttons {
+    margin-top: 20px;
+}
+
+.banner__button {
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.banner__button:hover {
+    background-color: #f3f3f3;
+}
+
+.banner--fadeBottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 150px;
+    background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.8));
+}
+
+/* Row of Movie Thumbnails */
+.row {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.row h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.row__posters {
+    display: flex;
+    overflow-x: scroll;
+    padding: 20px;
+}
+
+.row__poster {
+    width: 200px;
+    object-fit: cover;
+    margin-right: 10px;
+    transition: transform 0.3s;
+}
+
+.row__poster:hover {
+    transform: scale(1.1);
+}
+
+.row__posterLarge {
+    height: 300px;
+}
+
+.row__posterSmall {
+    height: 150px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: white;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <form action="backend.php">
+    <div>
+        <label for="name">Name</label>
+     <input type="text" name="myname"id="name" placeholder="enter your name">
+    </div> 
+    <br>  
+    <div>
+        role:<input type="text" name="myrole">
+    </div>
+    <br>
+     <div>
+        Email:<input type="text" name="myemail">   
+     </div>  
+     <br> 
+     <div>
+        date:<input type="date" name="date">
+    </div>
+    <br>
+    <div>
+        bonus:<input type="number" name="mybonus">
+    </div> 
+    <br> 
+    <div>
+        Are you eligible:<input type="checkbox" name="my elighiblity" checked>
+       </div> 
+       <br>
+       <div>
+        Gender:male<input type="radio"name="gender"checked>female<input type="radio" name="gender">
+       </div>
+       <br> 
+        <div>
+       write about yourself:<br> <textarea name="mytext" id="" rows="10" column="30"></textarea>
+       </div> 
+       <br>
+        <div>
+           country: <select name="country" id="country">
+            <option value="nepal"selected>nepal</option>
+            <option value="india">india</option>
+            <option value="china">china</option>
+           </select>
+       </div> 
+       <br>
+       <input type="submit" values="submi nowt">
+       <input type="reset" values="reset">
+    </form>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>specificity and cascade</title>
+    <style>
+        /* the specificity of this selector is 1 */
+        h1{
+            color: blue;
+        }
+        /* the specificity of this selector is 10*/
+        .red{
+            color: aqua;
+        }
+        /* the specificity of this selector is 10 */
+        h1.blue{
+            color: green ;
+        }
+        /* the specificity of this selector is 1+10=11 */
+        .yellow{
+            color: yellow;
+        }
+        /* the specificity of this selector is 10 */
+        [data-x=a]{
+            background-color: brown;
+        }
+        /* the specificity of this selector is 1+10+10+10+10=41 */
+         a.harryclass.yubrajclass[herf]:hover{
+            color: blueviolet;
+         }
+    </style>
+</head>
+<body>
+    <h1 class=" red blue yellow" data-x="a">css specificity</h1>
+</body>
+</html>
+<!-- specificity calculation:
+To calculate specificity, assign a value to each part of the selector:
+
+Universal Selector: 0
+Element selectors and pseudo-elements: 1
+Class selectors, attribute selectors, and pseudo-classes: 10
+ID selectors: 100
+Inline styles: 1000 -->

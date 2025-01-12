@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <form onsubmit=" return data()" action="jsform.html">
+    <div>
+        username: <input type="text" name="name" id="n1">
+    </div>
+    <div>
+        password: <input type="password" name="password" id="n2">
+    </div>
+    <div>
+        Gender: male<input type="radio" name="Gender" id="n3">female<input type="radio" name="Gender" id="n3">
+    </div>
+    Hobbies:football<input type="checkbox" value="hobbies" id="n4">basketball<input type="checkbox" value="hobbies" id="n4">circket<input type="checkbox" value="hobbies" id="n4">
+    <div>
+        <input type="submit" value="submit now" id="">
+    </div>
+   </form>
+</body>
+<script>
+    function data(){
+        let a=document.getElementById("n1").value;
+        let b=document.getElementById("n2").value;
+        let c=document.getElementById("n3").checked;
+        let d=document.getElementById("n4").checked;
+           
+        if(a==""||b==""){
+          alert("username and password are mandatory")
+          return false;
+        }
+        else if(!b.match(/^[a-zA-Z].*[0-9]$/)){
+            alert("password should start with character and end with digit");
+            return false;
+        }
+        else if(!c){
+            alert("select a gender");
+            return false;   
+        }
+        else if(!d){
+            alert("select a  hobbies");
+            return false;   
+        }
+        else{
+            true;
+        }
+    }
+
+</script>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>title</title>
+    <style>
+        .container{
+            border: 2px solid blueviolet;
+            background-color: blue;
+            width:auto;
+            height: 1200px;;
+        }
+        .box{
+            display: inline-block;
+            border:2px solid red;
+            background-color: aqua;
+            margin:3px;
+            height: 134px;
+            width: 134px;
+        }
+        #box3{
+            /* RELATIVE vaneko chai aafno position bata hallinu jasto ho  */
+            /* position:relative; */
+            /* ABOSOLUTE move according to parents */
+            position: absolute;
+            /* FIXED IT REMAIN FIXED TO SOME  */
+            /* /* position: fixed; */
+            /* position: sticky; */
+            top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+    </div>
+</body>
+</html>
