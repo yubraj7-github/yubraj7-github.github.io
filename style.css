@@ -41,6 +41,114 @@ nav img{
     position: relative;
     z-index: 10;
 }
+@media only screen and (max-width:1300px)
+{ nav{
+    display: flex;
+    justify-content: space-between;
+    margin:auto;
+    max-width: 90vw;
+    align-items: center;
+}
+nav img{
+    width: 90px;
+}
+.btn{
+    padding: 7px 16px 7px 16px;
+    font-weight: bold;
+    background-color:red;
+    border: 2px solid  rgba(238, 232, 232, 0.5);
+    background-color: rgba(23, 23, 23, 0.2);
+     cursor: pointer;
+    }
+.hero >:nth-child(1){
+    font-size: 32px!important;
+
+}
+.hero >:nth-child(2){
+    font-size: 15px!important;
+}.hero >:nth-child(3){
+    font-size: 15px!important;
+}
+.main input{
+    width: 220px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+}
+.btn-red{
+
+    padding: 9px 36px 9px !important;
+    font-size: 15px!important;
+    
+}
+.first{
+    width: 270px;
+    font-weight:500;
+    font-size: 20px!important;
+    margin-left:-90px;
+}
+.poster{
+    width:120px; 
+    /* margin: 12px 12px 12px 12px !important;
+   padding: 12px 12px 12px 12px !important; */
+   margin-left: -97px!important;
+   margin-right: -96px!important;
+}
+select{
+    background-color: rgb(27, 25, 25);
+    margin-left:-75px;
+    width: 330px!important;
+}  
+.third{
+    margin-left: -75px;
+    width: 270px;
+    font-weight:500;
+    font-size: 25px;
+
+}
+.fourth{
+    height: 240px!important;
+    width: 284px!important;
+    margin:-2px -8px 11px 24px!important;  
+}
+.faq{
+    font-size:11px!important;
+    font-weight: 500!important;
+    padding: 32px 34px 34px 16px!important;
+}
+.faqbox{
+    max-width: 80vw !important; ;
+    margin:-20px 15px 30px 12px!important;
+    padding: 24px!important;
+    font-size: 18px!important;
+}
+.footbutton{
+    height: 50px!important;
+    width: 140px!important;
+    margin: 12px 12px 12px 12px !important; 
+    text-align: center;
+}
+.last{
+    padding: 20px 12px 15px 15px!important;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr !important;
+    color: white;
+    margin-left: -56px;
+}
+.questions{
+    margin-left:-60px !important;
+} 
+}
 nav button{
     position: relative;
     z-index: 10;
@@ -58,7 +166,7 @@ nav button{
     flex-direction: column;
     position:relative;
     gap:20px;
-    padding: 0px 29px;
+    
 }
 .hero >:nth-child(1){
     font-weight: bolder;
@@ -270,4 +378,3 @@ footer a{
 }
 
 
-}
